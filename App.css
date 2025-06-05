@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f4f8;
+  color: #333;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1a73e8;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  width: 97%;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.note-form input,
+.note-form textarea {
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+  resize: none;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.note-form button {
+  align-self: flex-end;
+  background: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.note-form button:hover {
+  background: #0f59c7;
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: #fefefe;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+}
+
+.note-card h3 {
+  margin: 0 0 10px;
+  color: #1a73e8;
+}
+
+.note-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.actions button:first-child {
+  background: #ffd54f;
+  color: #333;
+}
+
+.actions button:first-child:hover {
+  background: #ffca28;
+}
+
+.actions button:last-child {
+  background: #e57373;
+  color: white;
+}
+
+.actions button:last-child:hover {
+  background: #ef5350;
+}
